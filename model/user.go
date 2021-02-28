@@ -41,6 +41,7 @@ type User struct {
 	Errors      map[string]string `json:"errors"`
 }
 
+
 func (user *User) Validate() bool {
 	user.Errors = make(map[string]string)
 	reg := regexp.MustCompile("((19|20)\\d\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])")
